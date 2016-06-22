@@ -9,7 +9,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top barra">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -18,10 +18,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Web Dev Academy</a>
+                    <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
                         <li><a href="#">In&iacute;cio</a></li>
                         <li><a href="#">Op&ccedil;&oacute;es</a></li>
                         <li><a href="#">Perfil</a></li>
@@ -31,10 +31,10 @@
             </div>
         </nav>
 
-        <div id="main" class="container-fluid" style="margin-top: 50px">
+        <div id="main" class="container-fluid text-center" style="margin-top: 50px">
             <div id="top" class="row">
                 <div class="col-sm-3">
-                    <h2>Itens</h2>
+                    <h2>Alunos</h2>
                 </div>
                 <div class="col-sm-6">
                     <div class="input-group h2">
@@ -48,7 +48,7 @@
 
                 </div>
                 <div class="col-sm-3">
-                    <a href="add.html" class="btn btn-primary pull-right h2">Novo Item</a>
+                    <a href="add.jsp" class="btn btn-primary pull-right h2">Novo Item</a>
                 </div>
             </div> <!-- /#top -->
             <hr />
@@ -57,124 +57,27 @@
                     <table class="table table-striped" cellspacing="0" cellpadding="0">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Header 1</th>
-                                <th>Header 2</th>
-                                <th>Header 3</th>
-                                <th class="actions">Ações</th>
+                                <th class="text-center">Matricula</th>
+                                <th class="text-center">Nome</th>
+                                <th class="text-center">Idade</th>
+                                <th class="text-center">Data Nascimento</th>
+                                <th class="actions text-center">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
+                        <c:forTokens var="aluno" items="${listaAlunos}">
                             <tr>
-                                <td>1001</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
+                                <td>${aluno.matricula}</td>
+                                <td>${aluno.name}</td>
+                                <td>${aluno.idade}</td>
+                                <td>${aluno.dataNasc}</td>
                                 <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+                                    <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
+                                    <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
                                     <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>1002</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1003</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1004</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1005</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1006</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1007</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1008</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1009</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1010</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-                                <td>Jes</td>
-                                <td>01/01/2015</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
-                            </tr>
+                        </c:forTokens>
                         </tbody>
                     </table>
                 </div>
