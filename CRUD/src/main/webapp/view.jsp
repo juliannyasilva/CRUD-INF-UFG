@@ -98,8 +98,8 @@
             <hr />
             <div id="actions" class="row">
                 <div class="col-md-12">
-                    <a href="index.html" class="btn btn-primary">Fechar</a>
-                    <a href="edit.html" class="btn btn-default">Editar</a>
+                    <a href="index.jsp" class="btn btn-primary">Fechar</a>
+                    <a href="edit.jsp" class="btn btn-default">Editar</a>
                     <a href="#" class="btn btn-default" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                 </div>
             </div>

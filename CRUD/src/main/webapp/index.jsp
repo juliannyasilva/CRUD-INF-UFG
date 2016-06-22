@@ -20,14 +20,14 @@
                     </button>
                     <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+<!--                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
                         <li><a href="#">In&iacute;cio</a></li>
                         <li><a href="#">Op&ccedil;&oacute;es</a></li>
                         <li><a href="#">Perfil</a></li>
                         <li><a href="#">Ajuda</a></li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </nav>
 
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="input-group h2">
-                        <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens">
+                        <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Alunos">
                         <span class="input-group-btn">
                             <button class="btn btn-primary" type="submit">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -48,7 +48,7 @@
 
                 </div>
                 <div class="col-sm-3">
-                    <a href="add.jsp" class="btn btn-primary pull-right h2">Novo Item</a>
+                    <a href="add.jsp" class="btn btn-primary pull-right h2">Cadastrar um novo Aluno</a>
                 </div>
             </div> <!-- /#top -->
             <hr />
@@ -61,21 +61,42 @@
                                 <th class="text-center">Nome</th>
                                 <th class="text-center">Idade</th>
                                 <th class="text-center">Data Nascimento</th>
+                                <th class="text-center">Email</th>
                                 <th class="actions text-center">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
+                        <tr>
+                            <td>20131556</td>
+                            <td>Julianny Alves da Silva</td>
+                            <td>19</td>
+                            <td>12/07/1996</td>
+                            <td>julianny.alves@hotmail.com</td>
+                            <td class="actions">
+                                <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
+                                <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
+                                <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>20131557</td>
+                            <td>Marlos Carlos Pires</td>
+                            <td>36</td>
+                            <td>15/11/1980</td>
+                            <td>julianny.alves@hotmail.com</td>
+                            <td class="actions">
+                                <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
+                                <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
+                                <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                            </td>
+                        </tr>
                         <c:forTokens var="aluno" items="${listaAlunos}">
                             <tr>
                                 <td>${aluno.matricula}</td>
                                 <td>${aluno.name}</td>
                                 <td>${aluno.idade}</td>
                                 <td>${aluno.dataNasc}</td>
-                                <td class="actions">
-                                    <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
-                                    <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
-                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                                </td>
+                               
                             </tr>
                         </c:forTokens>
                         </tbody>
@@ -88,7 +109,6 @@
                         <li class="disabled"><a>&lt; Anterior</a></li>
                         <li class="disabled"><a>1</a></li>
                         <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
                         <li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
                     </ul><!-- /.pagination -->
                 </div>

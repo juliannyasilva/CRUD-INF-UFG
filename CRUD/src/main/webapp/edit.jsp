@@ -9,7 +9,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top barra">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -18,12 +18,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Web Dev Academy</a>
+                    <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
                         <li><a href="#">In&iacute;cio</a></li>
-                        <li><a href="#">Op&ccedil;&otilde;es</a></li>
+                        <li><a href="#">Op&ccedil;&oacute;es</a></li>
                         <li><a href="#">Perfil</a></li>
                         <li><a href="#">Ajuda</a></li>
                     </ul>
@@ -108,7 +108,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary">Atualizar</button>
-                        <a href="index.html" class="btn btn-default">Cancelar</a>
+                        <a href="index.jsp" class="btn btn-default">Cancelar</a>
                     </div>
                 </div>
             </form>
