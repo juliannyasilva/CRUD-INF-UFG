@@ -31,10 +31,10 @@
             </div>
         </nav>
 
-        <div id="main" class="container-fluid text-center" style="margin-top: 50px">
+        <div id="main" class="container text-center" style="margin-top: 50px">
             <div id="top" class="row">
                 <div class="col-sm-3">
-                    <h2>Alunos</h2>
+                   
                 </div>
                 <div class="col-sm-6">
                     <div class="input-group h2">
@@ -66,39 +66,38 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>20131556</td>
-                            <td>Julianny Alves da Silva</td>
-                            <td>19</td>
-                            <td>12/07/1996</td>
-                            <td>julianny.alves@hotmail.com</td>
-                            <td class="actions">
-                                <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
-                                <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
-                                <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>20131557</td>
-                            <td>Marlos Carlos Pires</td>
-                            <td>36</td>
-                            <td>15/11/1980</td>
-                            <td>julianny.alves@hotmail.com</td>
-                            <td class="actions">
-                                <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
-                                <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
-                                <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-                            </td>
-                        </tr>
-                        <c:forTokens var="aluno" items="${listaAlunos}">
                             <tr>
-                                <td>${aluno.matricula}</td>
-                                <td>${aluno.name}</td>
-                                <td>${aluno.idade}</td>
-                                <td>${aluno.dataNasc}</td>
-                               
+                                <td>20131556</td>
+                                <td>Julianny Alves da Silva</td>
+                                <td>19</td>
+                                <td>12/07/1996</td>
+                                <td>julianny.alves@hotmail.com</td>
+                                <td class="actions">
+                                    <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
+                                    <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
+                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                                </td>
                             </tr>
-                        </c:forTokens>
+                             <tr>
+                                <td>20131557</td>
+                                <td>Marlos Carlos Pires</td>
+                                <td>36</td>
+                                <td>15/11/1980</td>
+                                <td>marlos.pires@hotmail.com</td>
+                                <td class="actions">
+                                    <a class="btn btn-success btn-xs" href="view.jsp">Visualizar</a>
+                                    <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
+                                    <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                                </td>
+                            </tr>
+                            <c:forTokens var="aluno" items="${listaAlunos}">
+                                <tr>
+                                    <td>${aluno.matricula}</td>
+                                    <td>${aluno.name}</td>
+                                    <td>${aluno.idade}</td>
+                                    <td>${aluno.dataNasc}</td>                               
+                                </tr>
+                            </c:forTokens>
                         </tbody>
                     </table>
                 </div>
@@ -114,17 +113,16 @@
                 </div>
             </div> <!-- /#bottom -->
         </div> <!-- /#main -->
-
         <!-- Modal -->
         <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
+                        <h4 class="modal-title" id="modalLabel">Excluir Aluno</h4>
                     </div>
                     <div class="modal-body">
-                        Deseja realmente excluir este item?
+                        Deseja realmente excluir este aluno?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary">Sim</button>

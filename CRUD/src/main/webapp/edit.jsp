@@ -20,20 +20,19 @@
                     </button>
                     <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
-                        <li><a href="#">In&iacute;cio</a></li>
-                        <li><a href="#">Op&ccedil;&oacute;es</a></li>
-                        <li><a href="#">Perfil</a></li>
-                        <li><a href="#">Ajuda</a></li>
-                    </ul>
-                </div>
+                <!--                <div id="navbar" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
+                                        <li><a href="#">In&iacute;cio</a></li>
+                                        <li><a href="#">Op&ccedil;&oacute;es</a></li>
+                                        <li><a href="#">Perfil</a></li>
+                                        <li><a href="#">Ajuda</a></li>
+                                    </ul>
+                                </div>-->
             </div>
         </nav>
-
-        <div id="main" class="container-fluid">
-            <h3 class="page-header">Editar Item</h3>
-            <form action="index.html">
+        <div id="main" class="container">
+            <h3 class="page-header">Editar Aluno</h3>
+            <form action="index.jsp">
                 <div class="row">
                     <div class="form-group col-md-4">
                         <label for="exampleInputEmail1">Campo Um</label>
@@ -67,48 +66,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">Campo Oito</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">Campo Nove</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-3">
-                        <label for="exampleInputEmail1">Campo Dez</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="exampleInputEmail1">Campo Onze</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="exampleInputEmail1">Campo Doze</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="exampleInputEmail1">Campo Treza</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">Campo Quatorze</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">Campo Quinze</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o valor">
-                    </div>
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Atualizar</button>
-                        <a href="index.jsp" class="btn btn-default">Cancelar</a>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Atualizar</button>
+                            <a href="index.jsp" class="btn btn-default">Cancelar</a>
+                        </div>
                     </div>
                 </div>
             </form>

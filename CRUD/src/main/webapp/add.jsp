@@ -10,7 +10,7 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top barra">
+         <nav class="navbar navbar-inverse navbar-fixed-top barra">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -21,14 +21,14 @@
                     </button>
                     <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+<!--                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
                         <li><a href="#">In&iacute;cio</a></li>
                         <li><a href="#">Op&ccedil;&oacute;es</a></li>
                         <li><a href="#">Perfil</a></li>
                         <li><a href="#">Ajuda</a></li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </nav>
 

@@ -15,10 +15,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
+                        <h4 class="modal-title" id="modalLabel">Excluir Aluno</h4>
                     </div>
                     <div class="modal-body">
-                        Deseja realmente excluir este item?
+                        Deseja realmente excluir este aluno?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary">Sim</button>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top barra">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,20 +36,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Web Dev Academy</a>
+                    <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
+<!--                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
                         <li><a href="#">In&iacute;cio</a></li>
-                        <li><a href="#">Op&ccedil;&otilde;es</a></li>
+                        <li><a href="#">Op&ccedil;&oacute;es</a></li>
                         <li><a href="#">Perfil</a></li>
                         <li><a href="#">Ajuda</a></li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </nav>
-        <div id="main" class="container-fluid">
-            <h3 class="page-header">Visualizar Item #1</h3>
+        <div id="main" class="container">
+            <h3 class="page-header">Visualizar Aluno #1</h3>
             <div class="row">
                 <div class="col-md-4">
                     <p><strong>Campo Um</strong></p>
