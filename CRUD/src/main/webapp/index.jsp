@@ -107,7 +107,7 @@
                     <ul class="pagination">
                         <li class="disabled"><a>&lt; Anterior</a></li>
                         <li class="disabled"><a>1</a></li>
-                        <li><a href="#">2</a></li>
+                        <!--<li><a href="#">2</a></li>-->
                         <li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
                     </ul><!-- /.pagination -->
                 </div>
