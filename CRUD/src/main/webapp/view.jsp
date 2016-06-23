@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>CRUD - Alunos</title>
+        <title>CRUD - Alunos</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -38,73 +38,53 @@
                     </button>
                     <a class="navbar-brand" href="#">CRUDAlunos</a>
                 </div>
-<!--                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
-                        <li><a href="#">In&iacute;cio</a></li>
-                        <li><a href="#">Op&ccedil;&oacute;es</a></li>
-                        <li><a href="#">Perfil</a></li>
-                        <li><a href="#">Ajuda</a></li>
-                    </ul>
-                </div>-->
+                <!--                <div id="navbar" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right" style="color: #ffffff;">
+                                        <li><a href="#">In&iacute;cio</a></li>
+                                        <li><a href="#">Op&ccedil;&oacute;es</a></li>
+                                        <li><a href="#">Perfil</a></li>
+                                        <li><a href="#">Ajuda</a></li>
+                                    </ul>
+                                </div>-->
             </div>
         </nav>
         <div id="main" class="container">
-            <h3 class="page-header">Visualizar Aluno #1</h3>
+            <h3 class="page-header">Visualizar Aluno</h3>
             <div class="row">
-                <div class="col-md-4">
-                    <p><strong>Campo Um</strong></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <div class="col-md-1">
+                    <p><strong>Nome:</strong></p>
                 </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Dois</strong></p>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Três</strong></p>
-                    <p>123.456.789-0</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Quatro</strong></p>
-                    <p>In vel sollicitudin leo, id fermentum augue.</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Cinco</strong></p>
-                    <p>(00) 234-5678</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Seis</strong></p>
-                    <p>Nullam ultrices elit ante.</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Sete</strong></p>
-                    <p>Integer finibus in ligula vitae aliquet.</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Oito</strong></p>
-                    <p>Jes</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Campo Nove</strong></p>
-                    <p>Lundo, Merkredo, Vendredo</p>
-                </div>
-                <div class="col-md-8">
-                    <p><strong>Campo Dez</strong></p>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        In bibendum nunc urna, at vestibulum neque pellentesque eget. 
-                        Maecenas lacinia velit ante, vitae fermentum ex interdum et. 
-                        In vel sollicitudin leo, id fermentum augue. </p>
+                <div class="col-md-6">   
+                    <p>Julianny Alves da Silva</p>
                 </div>
             </div>
-            <hr />
-            <div id="actions" class="row">
-                <div class="col-md-12">
-                    <a href="index.jsp" class="btn btn-primary">Fechar</a>
-                    <a href="edit.jsp" class="btn btn-default">Editar</a>
-                    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            <div class="row">
+                <div class="col-md-1">
+                    <p><strong>Emial:</strong></p>
+                </div>
+                <div class="col-md-6">  
+                    <p>julianny.alves@hotmail.com</p>
                 </div>
             </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <div class="row">
+                <div class="col-md-1">
+                    <p><strong>Idade:</strong></p>
+                </div>
+                 <div class="col-md-2">
+                    <p>19</p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div id="actions" class="row">
+            <div class="col-md-12 text-center">
+                <a href="index.jsp" class="btn btn-primary">Fechar</a>
+                <a href="edit.jsp" class="btn btn-default">Editar</a>
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
 </html>
